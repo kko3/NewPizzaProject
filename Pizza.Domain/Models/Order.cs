@@ -7,6 +7,8 @@ namespace Pizza.Domain.Models
     public int Id { get; set; }
     public List<Pizza> PizzasOnOrder { get; set; }
     public decimal OrderCost { get; set; }
+    public static decimal CostLimit { get; set; }
+    public static int PizzaLimit { get; set; }
     public bool isComplete { get; set; }
 
     Order()
